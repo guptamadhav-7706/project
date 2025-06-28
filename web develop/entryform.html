@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Entry Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		
+		.container {
+			width: 50%;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #63b4f2;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: #f3f6f7;
+		}
+		
+		.form-group {
+			margin-bottom: 20px;
+		}
+		
+		.form-group label {
+			display: block;
+			margin-bottom: 2px;
+		}
+		
+		.form-group input[type="text"], .form-group input[type="email"], .form-group input[type="number"], .form-group select {
+			width: 80%;
+			height: 40px;
+			margin-bottom: 15px;
+			padding: 10px;
+			border: 1px solid #cccccc;
+			border-radius: 2px;
+		}
+		
+		.form-group input[type="radio"] {
+			margin-right: 10px;
+		}
+		
+		.button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2><center>Employee Entry Form</center></h2>
+		<form>
+			<div class="form-group">
+				<label for="employeeName">First Name:</label>
+				<input type="text" id="employeeName" name="employeeName" required>
+                <label for="employeeName">Middle Name:</label>
+				<input type="text" id="employeeName" name="employeeName" required>
+                <label for="employeeName">Last Name:</label>
+				<input type="text" id="employeeName" name="employeeName" required>
+			</div>
+			
+			<div class="form-group">
+				<label for="gender">Gender:</label>
+				<input type="radio" id="male" name="gender" value="male">
+				<label for="male">Male</label>
+				<input type="radio" id="female" name="gender" value="female">
+				<label for="female">Female</label>
+			</div>
+			
+			<div class="form-group">
+				<label for="age">Age:</label>
+				<input type="number" id="age" name="age" required>
+			</div>
+			
+			<div class="form-group">
+				<label for="dob">Date of Birth:</label>
+				<input type="date" id="dob" name="dob" required>
+			</div>
+			
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+			</div>
+			
+			<div class="form-group">
+				<label for="contactNumber">Contact Number:</label>
+				<input type="number" id="contactNumber" name="contactNumber" required>
+			</div>
+			
+			<div class="form-group">
+				<label for="department">Department:</label>
+				<select id="department" name="department" required>
+					<option value="">Select Department</option>
+					<option value="HR">HR</option>
+					<option value="IT">IT</option>
+					<option value="Finance">Finance</option>
+					<option value="Marketing">Marketing</option>
+				</select>
+			</div>
+			
+			<div class="form-group">
+				<label for="address">Address:</label>
+				<textarea id="address" name="address" rows="5" cols="50" required></textarea>
+			</div>
+			
+			<button class="button" type="submit">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
+  
+</body>
+</html>
